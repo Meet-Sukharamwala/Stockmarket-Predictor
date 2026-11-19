@@ -1,0 +1,49 @@
+2026-05-12 19:27:34,482 - src.data_loader - INFO - Downloading data for AAPL from 2018-01-01 to 2024-01-01
+2026-05-12 19:27:40,823 - src.data_loader - INFO - Downloaded 1509 rows for AAPL
+2026-05-12 19:27:40,823 - __main__ - INFO - Data shape: (1509, 7)
+2026-05-12 19:27:40,857 - src.feature_engineering - INFO - Created 26 new features. Final shape: (1459, 32)
+2026-05-12 19:27:40,861 - __main__ - INFO - Training Linear Regression...
+2026-05-12 19:27:40,917 - src.model_utils - INFO - Saved sklearn model linear_regression to models\linear_regression.pkl
+2026-05-12 19:27:40,921 - src.forecasting - INFO - Linear Regression - RMSE: 0.0000, MAE: 0.0000, R2: 1.0000
+2026-05-12 19:27:40,921 - __main__ - INFO - Training Random Forest with hyperparameter tuning...
+2026-05-12 19:28:17,696 - src.forecasting - INFO - Best RF params: {'max_depth': 20, 'min_samples_split': 2, 'n_estimators': 50}
+2026-05-12 19:28:17,748 - src.model_utils - INFO - Saved sklearn model random_forest to models\random_forest.pkl
+2026-05-12 19:28:17,759 - src.forecasting - INFO - Random Forest - RMSE: 7.4294, MAE: 4.4375, R2: 0.8543
+2026-05-12 19:28:17,759 - __main__ - INFO - Training ARIMA...
+2026-05-12 19:28:18,179 - __main__ - INFO - Training LSTM...
+2026-05-12 19:28:18,401 - tensorflow - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-05-12 19:30:05,995 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2026-05-12 19:30:06,402 - src.model_utils - INFO - Saved LSTM model to models\lstm_model.h5
+2026-05-12 19:30:06,405 - src.forecasting - INFO - LSTM - RMSE: 3.6246, MAE: 2.7108, R2: 0.9947
+2026-05-12 19:30:10,838 - __main__ - INFO - Pipeline completed for AAPL.
+2026-05-12 19:31:22,614 - src.data_loader - INFO - Loading cached data for AAPL
+2026-05-12 19:31:22,833 - __main__ - INFO - Data shape: (1509, 7)
+2026-05-12 19:31:22,907 - src.feature_engineering - INFO - Created 26 new features. Final shape: (1459, 32)
+2026-05-12 19:31:22,914 - __main__ - INFO - Training Linear Regression...
+2026-05-12 19:31:22,933 - src.model_utils - INFO - Saved sklearn model linear_regression to models\linear_regression.pkl
+2026-05-12 19:31:22,944 - src.forecasting - INFO - Linear Regression - RMSE: 0.0000, MAE: 0.0000, R2: 1.0000
+2026-05-12 19:31:22,949 - __main__ - INFO - Training Random Forest with hyperparameter tuning...
+2026-05-12 19:34:51,050 - src.data_loader - INFO - Loading cached data for AAPL
+2026-05-12 19:34:51,159 - __main__ - INFO - Data shape: (1509, 7)
+2026-05-12 19:34:51,204 - src.feature_engineering - INFO - Created 26 new features. Final shape: (1459, 32)
+2026-05-12 19:34:51,211 - __main__ - INFO - Training Linear Regression...
+2026-05-12 19:34:51,231 - src.model_utils - INFO - Saved sklearn model linear_regression to models\linear_regression.pkl
+2026-05-12 19:34:51,238 - src.forecasting - INFO - Linear Regression - RMSE: 0.0000, MAE: 0.0000, R2: 1.0000
+2026-05-12 19:34:51,242 - __main__ - INFO - Training Random Forest with hyperparameter tuning...
+2026-05-12 19:37:54,186 - src.data_loader - INFO - Loading cached data for AAPL
+2026-05-12 19:37:54,294 - __main__ - INFO - Data shape: (1509, 7)
+2026-05-12 19:37:54,325 - src.feature_engineering - INFO - Created 26 new features. Final shape: (1459, 32)
+2026-05-12 19:37:54,334 - __main__ - INFO - Training Linear Regression...
+2026-05-12 19:37:54,355 - src.model_utils - INFO - Saved sklearn model linear_regression to models\linear_regression.pkl
+2026-05-12 19:37:54,362 - src.forecasting - INFO - Linear Regression - RMSE: 0.0000, MAE: 0.0000, R2: 1.0000
+2026-05-12 19:37:54,366 - __main__ - INFO - Training Random Forest with hyperparameter tuning...
+2026-05-12 19:39:01,130 - src.forecasting - INFO - Best RF params: {'max_depth': 20, 'min_samples_split': 2, 'n_estimators': 50}
+2026-05-12 19:39:01,187 - src.model_utils - INFO - Saved sklearn model random_forest to models\random_forest.pkl
+2026-05-12 19:39:01,235 - src.forecasting - INFO - Random Forest - RMSE: 7.4423, MAE: 4.4473, R2: 0.8538
+2026-05-12 19:39:01,240 - __main__ - INFO - Training ARIMA...
+2026-05-12 19:39:01,536 - __main__ - INFO - Training LSTM...
+2026-05-12 19:39:01,801 - tensorflow - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-05-12 19:39:45,493 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2026-05-12 19:39:45,960 - src.model_utils - INFO - Saved LSTM model to models\lstm_model.h5
+2026-05-12 19:39:45,982 - src.forecasting - INFO - LSTM - RMSE: 4.8191, MAE: 3.4868, R2: 0.9907
+2026-05-12 19:39:49,374 - __main__ - INFO - Pipeline completed for AAPL.
