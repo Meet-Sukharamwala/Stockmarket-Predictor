@@ -2,7 +2,6 @@
 
 A full‑stack machine learning and analytics platform that fetches live/historical stock data, performs financial analysis, and predicts future prices using classical ML, ARIMA, and deep learning (LSTM). Comes with an interactive Streamlit dashboard.
 
-![Dashboard Screenshot](screenshots/dashboard.png)
 
 ## Features
 
